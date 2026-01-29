@@ -1,0 +1,340 @@
+/* Products container using flex */
+.products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Product card styling */
+.product {
+    border: 1px solid #080404;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    background: #f1c9c9;
+    transition: transform 0.3s, box-shadow 0.3s;
+     animation: fadeIn 1s ease-in-out;
+}
+
+/* Hover animation */
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Product image */
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+/* Buy button */
+.product button {
+    background: green;
+    color: rgb(244, 244, 244);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.product button:hover {
+    background: darkgreen;
+}
+
+/* Video link */
+.product a {
+    display: inline-block;
+    margin: 8px 0;
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* Reset default spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fbfbfb;   /* Soft clean background */
+}
+
+/* Header */
+header {
+    background: #0f172a;   /* Modern dark blue */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Navigation bar */
+nav {
+    background: #1e293b;   /* Slightly lighter than header */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;         /* Soft blue hover */
+}
+
+/* Page content */
+section {
+    padding: 40px;
+    text-align: center;
+    background: transparent; 
+}
+#bgmi {
+    padding: 40px;
+    text-align: center;
+    background: transparent; 
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Form inputs */
+input, textarea, button {
+    width: 250px;
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    background: #2563eb;    /* Clean action blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+/* Footer */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Body */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #c7c7d38b;
+}
+
+/* Header & Logo */
+header {
+    background: linear-gradient(to right, #0077cc, #00c6ff);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes rotateLogo {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Navigation */
+nav {
+    background: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: linear-gradient(to right, #0077cc, #00c6ff);
+}
+
+/* Contact Section */
+
+
+.contact-section {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Contact Info */
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-info i {
+    color: #0077cc;
+    margin-right: 8px;
+}
+
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 5px #0077cc;
+    outline: none;
+}
+
+.contact-form button {
+    background: #0077cc;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #005fa3;
+}
+
+.social-links {
+    margin-top: 25px;
+}
+
+.social-links a {
+    margin: 0 12px;
+    font-size: 28px;
+    color: #444;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.facebook:hover { color: #1877F2; }
+.instagram:hover { color: #E1306C; }
+.youtube:hover { color: #FF0000; }
+.whatsapp:hover { color: #25D366; }
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+.hero {
+    background: linear-gradient(to right, #0077cc, #00c6ff);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: white;
+    color: #0077cc;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #eee;
+}
+#a {
+    background: linear-gradient(to right, #0077cc, #00c6ff);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
